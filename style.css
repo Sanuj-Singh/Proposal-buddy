@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+ background-image: var(--random-background);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-color: #000000;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 20px 30px;
+  font-size: 26px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}/*button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 50px; /* Set border-radius to 50% of the button's width/height for a circular shape 
+  cursor: pointer;
+}
+*/
+#videoArea {
+  width: 560px;
+  height: 315px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #84e0e3;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fffbfb, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+}
+
+#videoArea iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+
+#messageArea {
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  text-shadow: -1px -1px 0 #ffffff, 1px -1px 0 #fffbfb, -1px 1px 0 #ffffff, 1px 1px 0 #ffffff;
+  font-size: 40px; /* Set the font size to 20 pixels */
+}
+
+@media (max-width: 768px) {
+  #videoArea {
+    width: 80%;
+    height: auto;
+    font-size: 20px;
+  }
+  
+  #messageArea {
+    font-size: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #videoArea {
+    width: 90%;
+    font-size: 16px;
+  }
+  
+  #messageArea {
+    font-size: 24px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
